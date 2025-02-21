@@ -50,25 +50,45 @@
             margin-top: 20px;
             width: 100%;
         }
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            max-width: 800px;
+            overflow: hidden;
+            flex-wrap: wrap;
+            border-radius: 10px;
+        }
+        .gallery-container img {
+            height: 150px;
+            border-radius: 10px;
+            flex: 1 1 auto;
+            max-width: calc(25% - 10px);
+        }
         @media (min-width: 768px) {
-    .form-container {
-        display: flex;
-        justify-content: center;
-    }
-    iframe {
-        width: 700px;
-        height: 1000px;
-    }
-}
-@media screen and (max-width: 430px) {
-    body {
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-    }
-}
-}
-</style>
+            .form-container {
+                display: flex;
+                justify-content: center;
+            }
+            iframe {
+                width: 700px;
+                height: 1000px;
+            }
+        }
+        @media screen and (max-width: 430px) {
+            body {
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .gallery-container img {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -82,8 +102,15 @@
         <p style="font-size: 14px; color: #333; margin-top: 5px;">Or text us at <a href="tel:+13213480251" style="color: blue; text-decoration: underline;">(321) 348-0251</a></p>
         <p style="font-size: 18px; font-weight: bold; color: #333; margin-top: 10px;"><u>Insured Professionals - Over a Million Feet Installed</u></p>
     </div>
+    
+    <div class="gallery-container">
+        <img src="https://i1.wp.com/www.a1silt.com/wp-content/uploads/2016/07/2-hay-bales-water-barrier.jpg?w=1080&ssl=1" alt="Hay Bales Water Barrier">
+        <img src="https://i1.wp.com/www.a1silt.com/wp-content/uploads/2016/07/5-tree-safety-fence-barrier-e1489263145584.jpg?w=1080&ssl=1" alt="Tree Safety Fence Barrier">
+        <img src="https://i1.wp.com/www.a1silt.com/wp-content/uploads/2016/07/1-silt-fence-installation.jpg?w=1080&ssl=1" alt="Silt Fence Installation">
+        <img src="https://i0.wp.com/www.a1silt.com/wp-content/uploads/2016/07/6-silt-fence-installed.jpg?w=1080&ssl=1" alt="Silt Fence Installed">
+    </div>
+    
     <div class="form-container" id="quote-form" style="margin-top: 50px;">
-        
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5OQiCtRwqrwJoqePZaw1CV0A9Cq4qYxVP-_tloNnI15DdAg/viewform?embedded=true" style="width: 100%; max-width: 700px; height: 1000px; border: none; display: block; margin: 0 auto;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
     <div class="faq-container" style="max-width: 800px; margin: 50px auto; text-align: left; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
