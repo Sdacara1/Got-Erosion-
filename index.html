@@ -63,10 +63,10 @@
             border-radius: 10px;
         }
         .gallery-container img {
-            height: 150px;
+            height: auto;
             border-radius: 10px;
-            flex: 1 1 auto;
-            max-width: calc(25% - 10px);
+            flex: 1 1 calc(50% - 10px);
+            max-width: calc(50% - 10px);
         }
         @media (min-width: 768px) {
             .form-container {
@@ -80,12 +80,17 @@
         }
         @media screen and (max-width: 768px) {
             body {
-                background-size: contain;
-                background-position: top;
+                background-size: cover;
+                background-position: center;
                 background-attachment: scroll;
+            }
+            .gallery-container {
+                flex-direction: column;
+                align-items: center;
             }
             .gallery-container img {
                 max-width: 100%;
+                flex: none;
             }
         }
     </style>
